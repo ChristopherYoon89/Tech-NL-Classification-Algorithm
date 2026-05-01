@@ -58,7 +58,8 @@ print(len(dataset_total))
 
 ## Join columns
 
-dataset_total['Content'] = (dataset_total['title'].fillna('') + ' ' + dataset_total['text'].fillna('') + ' ' + dataset_total['tags'].fillna('')).str.strip()
+#dataset_total['Content'] = (dataset_total['title'].fillna('') + ' ' + dataset_total['text'].fillna('') + ' ' + dataset_total['tags'].fillna('')).str.strip()
+dataset_total['Content'] = (dataset_total['title'].fillna('') + ' ' + dataset_total['tags'].fillna('')).str.strip()
 print(dataset_total['Content'])
 
 
@@ -104,4 +105,4 @@ plt.show()
 
 ## Save final dataset
 
-dataset_total.to_excel('Dataset_Final_30042026.xlsx', index=False)
+dataset_total.to_excel('Dataset_Final_bow_ann_30042026.xlsx', index=False)

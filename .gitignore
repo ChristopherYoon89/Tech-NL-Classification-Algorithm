@@ -11,6 +11,7 @@ config.json
 gitworkflow.txt
 Classification_SubCategory_Model.pkl
 Input_Blacklist.csv
+results/
 
 # =========================
 # Virtual environments
