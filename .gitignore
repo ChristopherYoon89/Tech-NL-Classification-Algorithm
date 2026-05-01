@@ -1,49 +1,46 @@
-# =========================
+#----------------------
 # Environment variables
-# =========================
+#----------------------
 .env
 config.json
 
-
-# =========================
-# Other files
-# =========================
-gitworkflow.txt
-Classification_SubCategory_Model.pkl
-Input_Blacklist.csv
-results/
-
-# =========================
+#----------------------
 # Virtual environments
-# (your current one + common ones)
-# =========================
+#----------------------
 venv/
 .venv/
 
-# =========================
+#----------------------
 # Python cache / bytecode
-# =========================
+#----------------------
 __pycache__/
 *.py[cod]
 *$py.class
 *.pyc
 
-# =========================
+#----------------------
 # IDE / editor settings
-# =========================
+#----------------------
 .vscode/
 .idea/
 
-# =========================
+#----------------------
 # OS files
-# =========================
+#----------------------
 .DS_Store
 Thumbs.db
 
-# =========================
+#----------------------
 # Testing / coverage
-# =========================
+#----------------------
 .coverage
 htmlcov/
 
-
+#----------------------
+# Other files
+#----------------------
+gitworkflow.txt
+Classification_SubCategory_Model.pkl
+Input_Blacklist.csv
+results/
+Models/

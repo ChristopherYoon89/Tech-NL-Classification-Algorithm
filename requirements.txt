@@ -10,3 +10,5 @@ torch==2.11.0
 datasets==4.8.5
 transformers==5.7.0
 accelerate==1.13.0
+onnxruntime==1.23.2
+optimum==2.1.0
