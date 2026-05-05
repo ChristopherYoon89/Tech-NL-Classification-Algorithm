@@ -13,7 +13,7 @@ import datetime
 
 timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 
-NEW_DATA_INPUT_FILE = "Data/New_Articles.xlsx"
+NEW_DATA_INPUT_FILE = "Data/TECH_NL_CRAWL_FINAL_FULL_DATA_2026-05-04.xlsx"
 MODEL_PATH = "Models/newsletter_transformer_v1"
 OUTPUT_FILE = f"Data/New_Articles_Predicted_{timestamp}.xlsx"
 
@@ -22,7 +22,7 @@ OUTPUT_FILE = f"Data/New_Articles_Predicted_{timestamp}.xlsx"
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
 model = AutoModelForSequenceClassification.from_pretrained(MODEL_PATH)
-label_encoder = joblib.load(f"{MODEL_PATH}/label_encoder.pkl")
+label_encoder = joblib.load(f"Models/newsletter_label_encoder_v1.pkl")
 
 
 # Use CPU by default and change to cuda if available

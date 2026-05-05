@@ -44,3 +44,5 @@ Classification_SubCategory_Model.pkl
 Input_Blacklist.csv
 results/
 Models/
+*.xlsx
+*.html
