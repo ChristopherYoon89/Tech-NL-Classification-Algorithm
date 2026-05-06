@@ -8,6 +8,7 @@ import pandas as pd
 import re
 import datetime
 import html
+import time
 
 
 # Configuration
@@ -349,12 +350,12 @@ html_output = f"""
                 <span class="social-media-items"><a href="https://www.yoon-dev.com/" target="_blank">Website</a></span> | 
                 <span class="social-media-items"><a href="https://twitter.com/cyoon_dev" target="_blank">Twitter</a></span> | 
                 <span class="social-media-items"><a href="https://www.instagram.com/chris_ancapistan" target="_blank">Instagram</a></span> | 
-                <span class="social-media-items"><a href="https://www.yoon-dev.com/static/blog/media/NostrQR.png" target="_blank">Nostr</a></span> 
+                <span class="social-media-items"><a href="https://github.com/ChristopherYoon89" target="_blank">GitHub</a></span>  
             </p>
             
             <h3>CHRIS YOON DEVELOPING</h3>
             
-            <img class="rounded-circle" style="font-size:small;" src="https://www.yoon-dev.com/static/blog/media/profile-pic.webp" alt="<Profile Picture>">
+            <img class="rounded-circle" style="font-size:small;" src="https://www.yoon-dev.com/static/blog/media/profile-pic.webp" alt="Profile Picture">
             
             <h4 style="font-size: small; ">Tech Briefing #{NL_NUMBER}</h4>
 			
@@ -362,11 +363,10 @@ html_output = f"""
         
 		<div class="content">			
 		
-        <h2 style="margin-top: 15px;">The OceanGate tragedy and why physics doesn't care about feelings</h2>
+        <h2 style="margin-top: 15px;">Header of article</h2>
 
         <p>
-        On 18 June 2023, the so-called Titan, a submersible operated by the company OceanGate and its CEO Stockton Rush, imploded 
-        while diving down to the Titanic shipwreck, killing all five individuals on board.
+        Paragraph 1
         </p>
 
         <p>
@@ -375,7 +375,7 @@ html_output = f"""
         </p>
 
         <p>
-            <img class="robot-image" src="https://www.yoon-dev.com/static/blog/media/robotfreeze.png" alt="<robot image>">
+            <img class="robot-image" src="https://www.yoon-dev.com/static/blog/media/robotfreeze.png" alt="robot image">
         </p>
 
         <div class="links-text" style="margin-top: 15px;">
@@ -383,6 +383,7 @@ html_output = f"""
         The articles shared in the newsletter do not necessarily reflect my personal views.
         </p>
         </div>
+        <hr class="section-divider">
 
     <div class="news-section">
 """
@@ -425,8 +426,11 @@ for category, group in df.groupby("Predicted_Subcategory", sort=False):
     # Loop articles
     for _, row in group.iterrows():
         title = html.escape(str(row.get("title", "No title")))
+        print(title)
         url = html.escape(str(row.get("article_url", "#")))
+        print(url)
         source = html.escape(str(row.get("source_name", "Unknown")))
+        (source)
 
         html_output += f"""
         <p>
@@ -436,6 +440,7 @@ for category, group in df.groupby("Predicted_Subcategory", sort=False):
             </a>
         </p>
         """
+        time.sleep(1)
 
     html_output += "</div>"
 
@@ -443,6 +448,7 @@ for category, group in df.groupby("Predicted_Subcategory", sort=False):
 # Add CTA and footer to html
 
 html_output += """
+
 			<div class="links-text">
 			
 				<div class="cta"  style="margin-bottom: 65px; margin-top: 65px; font-style: normal;">
@@ -463,7 +469,8 @@ html_output += """
 				13fm7Vxz5qZV55h789uCRGxQegw5LGCBRn
 				</p>
 				<a href="https://www.yoon-dev.com/media/media/resources/BitcoinQRCode.png" target="_blank">
-				</a>
+				<img class="lightning-image" src="https://www.yoon-dev.com/media/media/resources/BitcoinQRCode.png" alt="Bitcoin Wallet QR Code">
+                </a>
 				
 				<p style="margin-top: 35px;">
 				Bitcoin Lightning Address:
@@ -471,6 +478,9 @@ html_output += """
 				<p class="lightning-address">
 				<span style="word-wrap: break-word; overflow-wrap: break-word;">lnurl1dp68gurn8ghj7ampd3kx2ar0veekzar0wd5xjtnrdakj7tnhv4kxctttdehhwm30d3h82unvwqhkxmmrdduhg6r0w4nksap5xykg650x</span>
 				</p>
+                <a href="https://www.yoon-dev.com/media/media/resources/WalletOfSatoshi.jpg" target="_blank">
+				<img class="lightning-image" src="https://www.yoon-dev.com/media/media/resources/Bitcoin_lightning_qrcode.png" alt="Lightning Wallet QR Code">
+				</a>
 				
 				<hr class="section-divider">
 				<div style="margin-bottom: 15px; margin-top: 25px; font-style: normal;">
@@ -478,7 +488,7 @@ html_output += """
 						<span class="social-media-items"><a href="https://www.yoon-dev.com/" target="_blank">Website</a></span> | 
 						<span class="social-media-items"><a href="https://twitter.com/cyoon_dev" target="_blank">Twitter</a></span> | 
 						<span class="social-media-items"><a href="https://www.instagram.com/chris_ancapistan" target="_blank">Instagram</a></span> | 
-						<span class="social-media-items"><a href="https://www.yoon-dev.com/static/blog/media/NostrQR.png" target="_blank">Nostr</a></span> 
+						<span class="social-media-items"><a href="https://github.com/ChristopherYoon89" target="_blank">GitHub</a></span> 
 					</p>
 				</div>
 			</div>
