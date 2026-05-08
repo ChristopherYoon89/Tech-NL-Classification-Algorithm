@@ -8,7 +8,6 @@ import pandas as pd
 import re
 import datetime
 import html
-import time
 
 
 # Configuration
@@ -440,7 +439,6 @@ for category, group in df.groupby("Predicted_Subcategory", sort=False):
             </a>
         </p>
         """
-        time.sleep(1)
 
     html_output += "</div>"
 
