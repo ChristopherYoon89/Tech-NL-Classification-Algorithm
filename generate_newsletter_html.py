@@ -473,7 +473,9 @@ html_output += """
 				Bitcoin Lightning Address:
 				</p>
 				<p class="lightning-address">
-				<span style="word-wrap: break-word; overflow-wrap: break-word;">lnurl1dp68gurn8ghj7ampd3kx2ar0veekzar0wd5xjtnrdakj7tnhv4kxctttdehhwm30d3h82unvwqhkxmmrdduhg6r0w4nksap5xykg650x</span>
+				<span style="word-wrap: break-word; overflow-wrap: break-word;">
+                specialrescue097@walletofsatoshi.com
+                </span>
 				</p>
                 <a href="https://www.yoon-dev.com/media/media/resources/WalletOfSatoshi.jpg" target="_blank">
 				<img class="lightning-image" src="https://www.yoon-dev.com/media/media/resources/Bitcoin_lightning_qrcode.png" alt="Lightning Wallet QR Code">
