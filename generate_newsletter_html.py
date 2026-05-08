@@ -374,7 +374,7 @@ html_output = f"""
         </p>
 
         <p>
-            <img class="robot-image" src="https://www.yoon-dev.com/static/blog/media/robotfreeze.png" alt="robot image">
+        <img class="robot-image" src="https://www.yoon-dev.com/static/blog/media/robotfreeze.png" alt="robot image">
         </p>
 
         <div class="links-text" style="margin-top: 15px;">
@@ -382,9 +382,8 @@ html_output = f"""
         The articles shared in the newsletter do not necessarily reflect my personal views.
         </p>
         </div>
-        <hr class="section-divider">
 
-    <div class="news-section">
+        <div class="news-section">
 """
 
 
@@ -412,7 +411,7 @@ df["Predicted_Subcategory"] = pd.Categorical(
 
 # Populate news articles by category
 
-for category, group in df.groupby("Predicted_Subcategory", sort=False):
+for category, group in df.groupby("Predicted_Subcategory", sort=True):
 
     html_output += """
     <hr class="section-divider">
