@@ -180,7 +180,7 @@ html_output = f"""
 		}}
 
         .header {{
-            background-color: #31184d;
+            background-color: #412066;
             color: white;
             padding: 10px;
             text-align: center;
