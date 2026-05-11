@@ -273,10 +273,6 @@ html_output = f"""
 			width: 60%;
 		}}
 
-		.code-text {{
-			color: #d436a5
-		}}
-
 		.links-category {{
 			font-size: 12pt;
 			text-align: center;
