@@ -14,7 +14,7 @@ import html
 
 timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 
-NEW_DATA_INPUT_FILE = "Data/TECH_NL_CRAWL_FINAL_FULL_DATA_2026-05-04.xlsx"
+NEW_DATA_INPUT_FILE = "Data/TECH_NL_CRAWL_FINAL_FULL_DATA_2026-05-10_09-34-49.xlsx"
 MODEL_PATH = "Models/newsletter_transformer_v1"
 OUTPUT_FILE = f"Data/New_Articles_Predicted_{timestamp}.xlsx"
 NL_NUMBER = 18
@@ -456,8 +456,15 @@ html_output += """
 
 				<h4 class="links-category">
 				Enjoying this newsletter? If it's adding value to your day, you can donate a 
-				few sats! Every little bit helps to keep this going. Thank you for your support!
+				few sats or buy me a coffee! Every little bit helps to keep this going. Thank you for your support!
 				</h4>
+
+                <p style="margin-top: 35px;">
+				Buy me a coffee
+				</p>
+                <a href="https://www.yoon-dev.com/media/media/resources/buy-me-a-coffee-qr-code.png" target="_blank">
+				<img class="lightning-image" src="https://www.yoon-dev.com/media/media/resources/buy-me-a-coffee-qr-code.png" alt="Buy me a coffee QR Code">
+				</a>
 
 				<p style="margin-top: 35px;">
 				Bitcoin Address:
