@@ -14,7 +14,7 @@ import html
 
 timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 
-NEW_DATA_INPUT_FILE = "Data/TECH_NL_CRAWL_FINAL_FULL_DATA_2026-05-10_09-34-49.xlsx"
+NEW_DATA_INPUT_FILE = "Data/TECH_NL_CRAWL_FINAL_FULL_DATA_2026-05-27.xlsx"
 MODEL_PATH = "Models/newsletter_transformer_v1"
 OUTPUT_FILE = f"Data/New_Articles_Predicted_{timestamp}.xlsx"
 NL_NUMBER = 18
@@ -344,7 +344,7 @@ html_output = f"""
             <p class="social-media">
                 <span class="social-media-items"><a href="https://www.yoon-dev.com/" target="_blank">Website</a></span> | 
                 <span class="social-media-items"><a href="https://twitter.com/cyoon_dev" target="_blank">Twitter</a></span> | 
-                <span class="social-media-items"><a href="https://www.instagram.com/chris_ancapistan" target="_blank">Instagram</a></span> | 
+                <span class="social-media-items"><a href="https://www.instagram.com/yoon_dev" target="_blank">Instagram</a></span> | 
                 <span class="social-media-items"><a href="https://github.com/ChristopherYoon89" target="_blank">GitHub</a></span>  
             </p>
             
@@ -489,7 +489,7 @@ html_output += """
 					<p class="social-media">
 						<span class="social-media-items"><a href="https://www.yoon-dev.com/" target="_blank">Website</a></span> | 
 						<span class="social-media-items"><a href="https://twitter.com/cyoon_dev" target="_blank">Twitter</a></span> | 
-						<span class="social-media-items"><a href="https://www.instagram.com/chris_ancapistan" target="_blank">Instagram</a></span> | 
+						<span class="social-media-items"><a href="https://www.instagram.com/yoon_dev" target="_blank">Instagram</a></span> | 
 						<span class="social-media-items"><a href="https://github.com/ChristopherYoon89" target="_blank">GitHub</a></span> 
 					</p>
 				</div>
