@@ -14,10 +14,10 @@ import html
 
 timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 
-NEW_DATA_INPUT_FILE = "Data/TECH_NL_CRAWL_FINAL_FULL_DATA_2026-05-27.xlsx"
+NEW_DATA_INPUT_FILE = "Data/TECH_NL_CRAWL_FINAL_FULL_DATA_2026-06-06_14-25-17.xlsx"
 MODEL_PATH = "Models/newsletter_transformer_v1"
 OUTPUT_FILE = f"Data/New_Articles_Predicted_{timestamp}.xlsx"
-NL_NUMBER = 19
+NL_NUMBER = 20
 GENERATED_HTML_FILE = f"yoon-newsletter-email-nr-{NL_NUMBER}.html"
 
 
@@ -305,7 +305,7 @@ html_output = f"""
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
-			width: 200px;
+			width: 150px;
 			font-size: small;
 		}}
 
