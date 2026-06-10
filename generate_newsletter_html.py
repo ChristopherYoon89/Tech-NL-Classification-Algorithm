@@ -345,7 +345,8 @@ html_output = f"""
                 <span class="social-media-items"><a href="https://www.yoon-dev.com/" target="_blank">Website</a></span> | 
                 <span class="social-media-items"><a href="https://twitter.com/cyoon_dev" target="_blank">Twitter</a></span> | 
                 <span class="social-media-items"><a href="https://www.instagram.com/yoon_dev" target="_blank">Instagram</a></span> | 
-                <span class="social-media-items"><a href="https://github.com/ChristopherYoon89" target="_blank">GitHub</a></span>  
+                <span class="social-media-items"><a href="https://github.com/ChristopherYoon89" target="_blank">GitHub</a></span> |
+                <span class="social-media-items"><a href="https://www.yoon-dev.com/newsletter" target="_blank">Sign Up</a></span>
             </p>
             
             <h3>CHRIS YOON DEVELOPING</h3>
@@ -368,6 +369,10 @@ html_output = f"""
         For more information feel free to <a style="text-decoration: underline;" href="https://www.yoon-dev.com/contact/" target="_blank">reach 
         out</a> to us and check out our social media channels - I would be excited to get in touch with you!
         </p>
+
+        <div class="cta"  style="margin-bottom: 65px; margin-top: 65px; font-style: normal;">
+            <a href="https://www.yoon-dev.com/newsletter" target="_blank">Sign Up for Newsletter</a>
+        </div>
 
         <p>
         <img class="robot-image" src="https://www.yoon-dev.com/static/blog/media/robotfreeze.png" alt="robot image">
