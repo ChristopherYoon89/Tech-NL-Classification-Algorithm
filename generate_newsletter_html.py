@@ -14,10 +14,10 @@ import html
 
 timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 
-NEW_DATA_INPUT_FILE = "Data/TECH_NL_CRAWL_FINAL_FULL_DATA_2026-06-06_14-25-17.xlsx"
+NEW_DATA_INPUT_FILE = "Data/TECH_NL_CRAWL_FULL_DATA_2026-07-09.xlsx"
 MODEL_PATH = "Models/newsletter_transformer_v1"
 OUTPUT_FILE = f"Data/New_Articles_Predicted_{timestamp}.xlsx"
-NL_NUMBER = 20
+NL_NUMBER = 21
 GENERATED_HTML_FILE = f"yoon-newsletter-email-nr-{NL_NUMBER}.html"
 
 
