@@ -456,8 +456,8 @@ html_output += """
 				<hr class="section-divider">
 
 				<h4 class="links-category">
-				Enjoying this newsletter? If it's adding value to your day, you can donate a 
-				few sats or buy me a coffee! Every little bit helps to keep this going. Thank you for your support!
+				Enjoying this newsletter? If it's adding value to your day, you can buy me a coffee! 
+                Every little bit helps to keep this going. Thank you for your support!
 				</h4>
 
                 <p style="margin-top: 35px;">
@@ -465,28 +465,6 @@ html_output += """
 				</p>
                 <a href="https://www.yoon-dev.com/media/media/resources/buy-me-a-coffee-qr-code.png" target="_blank">
 				<img class="lightning-image" src="https://www.yoon-dev.com/media/media/resources/buy-me-a-coffee-qr-code.png" alt="Buy me a coffee QR Code">
-				</a>
-
-				<p style="margin-top: 35px;">
-				Bitcoin Address:
-				</p>
-				<p class="lightning-address">
-				13fm7Vxz5qZV55h789uCRGxQegw5LGCBRn
-				</p>
-				<a href="https://www.yoon-dev.com/media/media/resources/BitcoinQRCode.png" target="_blank">
-				<img class="lightning-image" src="https://www.yoon-dev.com/media/media/resources/BitcoinQRCode.png" alt="Bitcoin Wallet QR Code">
-                </a>
-				
-				<p style="margin-top: 35px;">
-				Bitcoin Lightning Address:
-				</p>
-				<p class="lightning-address">
-				<span style="word-wrap: break-word; overflow-wrap: break-word;">
-                specialrescue097@walletofsatoshi.com
-                </span>
-				</p>
-                <a href="https://www.yoon-dev.com/media/media/resources/WalletOfSatoshi.jpg" target="_blank">
-				<img class="lightning-image" src="https://www.yoon-dev.com/media/media/resources/Bitcoin_lightning_qrcode.png" alt="Lightning Wallet QR Code">
 				</a>
 				
 				<hr class="section-divider">
